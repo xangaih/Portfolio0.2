@@ -14,7 +14,7 @@ const projects = [
     description:
       "A full-scale AI assistant platform built for real-world deployment. Integrates OpenAI's API with a FAISS vector store for semantic search and retrieval-augmented generation (RAG), powered by LangChain orchestration. Features a fast Streamlit interface, security-aware data handling, and REST API endpoints — engineered from the ground up on Linux with production reliability in mind.",
     tech: ["Python", "LangChain", "FAISS", "OpenAI API", "Streamlit", "REST APIs", "Linux"],
-    github: "https://github.com/khangaienkhbat",
+    github: "https://github.com/xangaih/ACE_AI.git",
     live: null,
     accent: "from-cyan-400/20 to-blue-500/10",
     border: "hover:border-cyan-400/50",
@@ -27,7 +27,7 @@ const projects = [
     description:
       "End-to-end machine learning pipeline for detecting toxic content at scale. Leveraged TensorFlow and fine-tuned LLMs to hit 90% precision/recall. Architected with audit logging, compliance flags, and a Gradio-powered demo UI. Automated the full deployment lifecycle with Docker and CI/CD pipelines — production-ready, scalable, and built with enterprise moderation workflows in mind.",
     tech: ["Python", "TensorFlow", "LLMs", "Gradio", "Docker", "CI/CD", "NumPy", "pandas"],
-    github: "https://github.com/khangaienkhbat",
+    github: "https://github.com/xangaih/Toxic-Comment-Classification.git",
     live: null,
     accent: "from-violet-400/20 to-purple-600/10",
     border: "hover:border-violet-400/50",
@@ -40,7 +40,7 @@ const projects = [
     description:
       "A cross-platform React Native app serving 100+ active users with real-time data sync and multi-cloud infrastructure. Built ingestion pipelines across MongoDB, Firebase, and AWS with Azure integration for analytics. Exposed a typed TypeScript API layer, accelerated iteration cycles with Cursor-assisted development, and maintained reliability through continuous CI/CD loops with real user feedback.",
     tech: ["React Native", "TypeScript", "MongoDB", "AWS", "Firebase", "Azure", "CI/CD"],
-    github: "https://github.com/khangaienkhbat",
+    github: "https://github.com/xangaih/GTG.git",
     live: null,
     accent: "from-emerald-400/20 to-teal-600/10",
     border: "hover:border-emerald-400/50",
