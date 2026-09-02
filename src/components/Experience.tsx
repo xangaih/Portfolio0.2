@@ -7,6 +7,32 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
+    company: "Hotbox",
+    role: "Junior Software Engineer",
+    period: "Jul 2026 — Present",
+    location: null,
+    highlight: null,
+    tags: [
+      "RAG Pipelines",
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "FAISS",
+      "LangGraph",
+      "Supabase",
+      "Pydantic",
+      "Node.js",
+      "Slack API",
+      "AWS (EC2, S3, SQS, ECS)",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Redis",
+      "CI/CD (GitHub Actions, pytest)",
+      "Datadog",
+    ],
+  },
+  {
     company: "Rayca Precision",
     role: "Software Engineer Intern",
     period: "Nov 2024 — Feb 2025",
@@ -83,9 +109,11 @@ export default function Experience() {
                     </div>
                   </div>
 
-                  <p className="text-slate-400 text-sm leading-relaxed mb-5 font-medium">
-                    {exp.highlight}
-                  </p>
+                  {exp.highlight && (
+                    <p className="text-slate-400 text-sm leading-relaxed mb-5 font-medium">
+                      {exp.highlight}
+                    </p>
+                  )}
 
                   <div className="flex flex-wrap gap-2">
                     {exp.tags.map((tag) => (

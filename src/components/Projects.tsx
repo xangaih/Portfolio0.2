@@ -3,10 +3,49 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Zap, Shield, Globe } from "lucide-react";
+import { ExternalLink, Zap, Shield, Globe, Phone, Receipt, Target } from "lucide-react";
 import { GithubIcon } from "@/components/icons";
 
 const projects = [
+  {
+    icon: Phone,
+    title: "Concierge",
+    subtitle: "Voice-First AI Travel Agent",
+    description:
+      "A multimodal, multi-agent travel-planning system built on the Guava voice-agent framework. Callers reach the orchestrating agent, \"Connie,\" over phone, WebRTC, or live mic — or type in a text-chat mode — and plan a trip out loud or on-screen. Connie coordinates a multi-agent architecture of specialized modules for hotels, restaurants, experiences, and budget, proposing options against a real budget, tracking the itinerary in SQLite, and surfacing concrete tradeoffs (a cheaper swap, dropping an optional stop, raising the budget) whenever a request would blow it. Its standout feature is adaptive vocal register: rather than asking callers to pick a voice, Connie opens neutral and silently shifts persona to match how the caller talks — detected via a fast, deterministic lexical classifier rather than an LLM call — while still recognizing returning callers by phone number. Ships with an intent-recognition layer for itinerary actions and a judge-facing FastAPI dashboard that renders visual trip recaps.",
+    tech: ["Python", "Guava SDK", "FastAPI", "SQLite", "Multi-Agent", "Voice AI", "Multimodal"],
+    github: "https://github.com/xangaih/guava-agent.git",
+    live: null,
+    accent: "from-amber-400/20 to-orange-600/10",
+    border: "hover:border-amber-400/50",
+    tag: "Voice AI / Agents",
+  },
+  {
+    icon: Receipt,
+    title: "Receipts",
+    subtitle: "AI Vendor Claim Auditor",
+    description:
+      "Audits the marketing claims of every vendor in an AI product category against public evidence — in about 90 seconds, for about $2. The pipeline reads each vendor's homepage, decomposes the copy into atomic, testable outcome claims, hunts the public web (via Tavily) for evidence behind each one, and judges every claim as publicly substantiated, self-reported only, or no public receipt — then rolls the results into a live credibility leaderboard and a market-wide Claim Inflation Index. The core bet is economic: a cost-aware inference cascade routes each claim to the cheapest model that can handle it (a small open-weights model for the easy majority) and escalates to Claude only for the cases it isn't confident on, cutting cost roughly 10x and latency roughly 5x versus running a frontier model on everything. Every model and tool call — cheap-tier attempts, escalations, web searches, page scrapes — is wrapped in a telemetry probe streamed live to a React dashboard over Server-Sent Events, and substantiated claims get rendered into a shareable \"honest ad\" image via generative image overlay.",
+    tech: ["Python", "FastAPI", "Claude Sonnet", "Qwen3 / vLLM", "Tavily", "SSE", "React", "Vite"],
+    github: "https://github.com/xangaih/Reciepts.git",
+    live: "https://receipts-frontend-production.up.railway.app/",
+    accent: "from-rose-400/20 to-pink-600/10",
+    border: "hover:border-rose-400/50",
+    tag: "AI / Cost-Aware LLM Cascade",
+  },
+  {
+    icon: Target,
+    title: "Possible Leads",
+    subtitle: "AI Lead Qualification Pipeline",
+    description:
+      "A parallelized pipeline that turns a raw dump of Instagram DMs and profiles into a triaged, scored lead queue for a small business. Each lead runs through four Claude-powered stages — extracting concrete facts from the profile and message (niche fit, pain points expressed, price awareness, spam signals), scoring quality and buying intent against the business's own goals and ideal-customer profile, drafting on-brand suggested DM replies, and enriching the record with deterministic signals like engagement rate and follower tier — fanned out across a thread pool so a batch of leads processes in about a minute. Leads land in an important / needs-reply / all-others triage queue behind a FastAPI backend and a React + Tailwind review UI, so a business owner can skip the noise and reply to what's actually worth their time.",
+    tech: ["Python", "Claude Sonnet", "FastAPI", "React", "Tailwind CSS", "Concurrent Pipelines"],
+    github: "https://github.com/xangaih/Possible_leads.git",
+    live: null,
+    accent: "from-lime-400/20 to-green-600/10",
+    border: "hover:border-lime-400/50",
+    tag: "AI / Lead Scoring",
+  },
   {
     icon: Zap,
     title: "ACE AI",

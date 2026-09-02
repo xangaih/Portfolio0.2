@@ -39,8 +39,8 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.15 }}
           >
             <p className="text-slate-300 text-lg leading-relaxed mb-6">
-              I&apos;m a Computer Science &amp; Data Science student at{" "}
-              <span className="text-cyan-400 font-semibold">DePauw University</span>, graduating May 2026.
+              I&apos;m a Computer Science &amp; Data Science graduate of{" "}
+              <span className="text-cyan-400 font-semibold">DePauw University</span> (May 2026).
               I care deeply about writing software that solves real problems — the kind that ships fast, holds
               up in production, and scales.
             </p>
@@ -50,8 +50,8 @@ export default function About() {
               fast-moving environments where ownership and craft matter equally.
             </p>
             <p className="text-slate-400 text-base leading-relaxed">
-              Currently pursuing Salesforce Platform Developer I certification. Looking to join a team where I
-              can grow fast, build meaningful things, and make a real dent.
+              Currently a Junior Software Engineer at Hotbox, building RAG pipelines and backend infrastructure,
+              and pursuing my Salesforce Platform Developer I certification alongside it.
             </p>
 
             {/* Info chips */}

@@ -26,7 +26,7 @@ export default function Hero() {
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-cyan-400/25 bg-cyan-400/5 text-cyan-400 text-sm font-medium mb-8"
         >
           <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-          Open to full-time opportunities · May 2026
+          Junior Software Engineer at Hotbox
         </motion.div>
 
         {/* Name */}
@@ -58,7 +58,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.45 }}
           className="max-w-2xl mx-auto text-base sm:text-lg text-slate-400 leading-relaxed mb-10"
         >
-          CS &amp; Data Science graduate from DePauw University. I ship production software — AI platforms,
+          CS &amp; Data Science graduate of DePauw University (May 2026). I ship production software — AI platforms,
           full-stack applications, and scalable systems — fast and with purpose.
         </motion.p>
 
@@ -92,8 +92,8 @@ export default function Hero() {
           className="flex items-center justify-center gap-6"
         >
           {[
-            { icon: GithubIcon, href: "https://github.com/khangaienkhbat", label: "GitHub" },
-            { icon: LinkedinIcon, href: "https://www.linkedin.com/in/khangai", label: "LinkedIn" },
+            { icon: GithubIcon, href: "https://github.com/xangaih", label: "GitHub" },
+            { icon: LinkedinIcon, href: "https://www.linkedin.com/in/khangai-enkhbat-mongol01/", label: "LinkedIn" },
             { icon: Mail, href: "mailto:khangaienkhbat2026@depauw.edu", label: "Email" },
           ].map(({ icon: Icon, href, label }) => (
             <a

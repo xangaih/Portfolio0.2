@@ -11,12 +11,12 @@ export default function Footer() {
         </p>
         <p>
           <a
-            href="https://github.com/khangaienkhbat"
+            href="https://github.com/xangaih"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-cyan-400 transition-colors"
           >
-            github.com/khangaienkhbat
+            github.com/xangaih
           </a>
         </p>
       </div>

@@ -17,15 +17,15 @@ const contacts = [
   {
     icon: LinkedinIcon,
     label: "LinkedIn",
-    value: "linkedin.com/in/khangai",
-    href: "https://www.linkedin.com/in/khangai",
+    value: "linkedin.com/in/khangai-enkhbat-mongol01",
+    href: "https://www.linkedin.com/in/khangai-enkhbat-mongol01/",
     description: "Let's connect professionally",
   },
   {
     icon: GithubIcon,
     label: "GitHub",
-    value: "github.com/khangaienkhbat",
-    href: "https://github.com/khangaienkhbat",
+    value: "github.com/xangaih",
+    href: "https://github.com/xangaih",
     description: "See my code in action",
   },
 ];
@@ -62,7 +62,7 @@ export default function Contact() {
             great together.
           </h3>
           <p className="text-slate-400 text-lg max-w-xl mx-auto">
-            I&apos;m actively looking for full-time software engineering roles starting May 2026.
+            I&apos;m always open to new opportunities and interesting conversations.
             If you&apos;re hiring, let&apos;s talk.
           </p>
         </motion.div>
